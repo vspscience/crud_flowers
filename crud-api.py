@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 from fastapi_crudrouter import SQLAlchemyCRUDRouter
 
-from crud_flowers.schemas import Client, Delivery, FlowersInAssortiment, Ordera, Ordered, OrderedServices, OrderedServicesCreate
-from crud_flowers.schemas import ClientCreate, DeliveryCreate, FlowersInAssortimentCreate, OrderaCreate, OrderedCreate
-from crud_flowers.schemas import PaymentMethod, PaymentMethodCreate, Provider, ProviderCreate, Servicess, ServicessCreate
-from crud_flowers.schemas import Types, TypesCreate
-from crud_flowers.model import ClientModel, DeliveryModel, FlowersInAssortimentModel, OrderaModel, OrderedModel, OrderedServicesModel
-from crud_flowers.model import PaymentMethodModel, ProviderModel, ServicessModel, TypesModel, get_db
+from schemas import Client, Delivery, FlowersInAssortiment, Ordera, Ordered, OrderedServices, OrderedServicesCreate
+from schemas import ClientCreate, DeliveryCreate, FlowersInAssortimentCreate, OrderaCreate, OrderedCreate
+from schemas import PaymentMethod, PaymentMethodCreate, Provider, ProviderCreate, Servicess, ServicessCreate
+from schemas import Types, TypesCreate
+from model import ClientModel, DeliveryModel, FlowersInAssortimentModel, OrderaModel, OrderedModel, OrderedServicesModel
+from model import PaymentMethodModel, ProviderModel, ServicessModel, TypesModel, get_db
 
 app = FastAPI()
 
